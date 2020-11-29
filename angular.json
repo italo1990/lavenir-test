@@ -117,8 +117,13 @@
               "devServerTarget": "lavenir-angular-test:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "lavenir-angular-test"
 }

@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "lavenir-eaaf5": {
+      "hosting": {
+        "lavenir-angular-test": [
+          "lavenir-eaaf5"
+        ]
+      }
+    }
+  }
+}
