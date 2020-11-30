@@ -1,0 +1,13 @@
+footer{
+    background-color: black;
+    color: white;
+}
+.footer-text{
+    text-align: left !important;
+}
+.content-html{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

@@ -1,5 +1,17 @@
 <div class="panel panel-primary">
     <div class="panel-heading">{{product.name}}</div>
     <div class="panel-body"><img src="{{product.imgUrl}}" class="img-responsive" style="width:100%" alt="Image"></div>
-    <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+    <div class="panel-footer">
+        <fa-icon class="option-item" [icon]="faTrash" (click)="deleteModal(modalDelete)"></fa-icon>
+        <fa-icon class="option-item" [icon]="faEdit" [routerLink]="['/edit-product']" [state]="product"></fa-icon>
+    </div>
 </div>
+
+<!-- <pre class="card card-block card-header">{{message}}</pre> -->
+<ng-template #modalDelete>
+  <div class="modal-body text-center">
+    <p>Are you sure? This action cannot be reversed</p>
+    <button type="button" class="btn btn-default" (click)="confirm()" >Yes</button>
+    <button type="button" class="btn btn-primary" (click)="this.modalRef.hide();" >No</button>
+  </div>
+</ng-template>

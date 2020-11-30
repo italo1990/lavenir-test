@@ -1,0 +1,23 @@
+.panel-footer{
+    display: flex;
+    background-color: #e9ecef;
+    justify-content: flex-end;
+}
+.img-responsive{
+    height: 200px;
+}
+.option-item{
+    margin: 0px 5px;
+    cursor: pointer;
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+    .img-responsive{
+        height: 150px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px){
+    .img-responsive{
+        height: 120px;
+    }
+}
